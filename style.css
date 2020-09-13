@@ -1,6 +1,7 @@
 body{
 	background: fff;
   margin: 0px;
+  background:black;
 }
 
 
@@ -41,11 +42,20 @@ img{
   /*content*/
   width: 150px;
   height: 150px;
-  /*margin: 0 auto;*/
-  background: white;
   position: relative;
   top: 120vh;
   z-index:-1;
+}
+
+.circle{
+  /*circle2*/
+  width:90px;
+  height:90px;
+  content:'';
+  background-color: crimson;
+  position: absolute;
+  margin: 35px 0px 0px 30px;
+  transform: rotate(-135deg);
 }
 
 .circle::after{
@@ -53,7 +63,7 @@ img{
   width: 90px;
   height: 90px;
   content:'';
-  background: crimson;
+  background-color: crimson;
   border-radius: 45px;
   position: absolute;
   margin: 44px 0px;
@@ -64,24 +74,98 @@ img{
   width: 90px;
   height: 90px;    
   content:'';
-  background: crimson;
+  background-color: crimson;
   position: absolute;
   z-index: 1;
   margin: 0px 44px;
   border-radius: 45px;
 }
-
-.circle{
-  /*circle2*/
-  width:90px;
-  height:90px;
-  content:'';
-  background: crimson;
-  position: absolute;
-  margin: 35px 0px 0px 30px;
-  transform: rotate(-135deg);
+/******************************/
+.heart.heart1 .circle{
+  animation: 12s colors infinite;
+  animation-delay: 0s;
+}
+.heart.heart1 .circle::before{
+  animation: 12s colors infinite;
+  animation-delay: 0s;
+}
+.heart.heart1 .circle::after{
+  animation: 12s colors infinite;
+  animation-delay: 0s;
 }
 
+
+.heart.heart2 .circle{
+  animation: 12s colors infinite;
+  animation-delay: 3s;
+}
+.heart.heart2 .circle::before{
+  animation: 12s colors infinite;
+  animation-delay: 3s;
+}
+.heart.heart2 .circle::after{
+  animation: 12s colors infinite;
+  animation-delay: 3s;
+}
+
+.heart.heart3 .circle{
+  animation: 12s colors infinite;
+  animation-delay: 6s;
+}
+.heart.heart3 .circle::before{
+  animation: 12s colors infinite;
+  animation-delay: 6s;
+}
+.heart.heart3 .circle::after{
+  animation: 12s colors infinite;
+  animation-delay: 6s;
+}
+
+.heart.heart4 .circle{
+  animation: 12s colors infinite;
+  animation-delay: 9s;
+}
+.heart.heart4 .circle::before{
+  animation: 12s colors infinite;
+  animation-delay: 9s;
+}
+.heart.heart4 .circle::after{
+  animation: 12s colors infinite;
+  animation-delay: 9s;
+}
+
+.heart.heart5 .circle{
+  animation: 12s colors infinite;
+  animation-delay: 5s;
+}
+.heart.heart5 .circle::before{
+  animation: 12s colors infinite;
+  animation-delay: 5s;
+}
+.heart.heart5 .circle::after{
+  animation: 12s colors infinite;
+  animation-delay: 5s;
+}
+
+
+@keyframes colors{
+  0%{     
+     background-color: #b30000;
+  }
+  25%{
+    background-color: #24248f;
+  }
+  50%{
+    background-color: #ff1a9f;
+  }
+  75%{
+    background-color: #fbd204;
+  }
+  100%{
+    background-color: #b30000;
+  }
+}
+/******************************/
 .halfMoon{
   background: transparent;
   height: 90px;
@@ -92,7 +176,7 @@ img{
   transform: rotate(45deg);
 }
 .halfMoon::before{
-  background: white;
+  background: black;
   height: 90px;
   width: 45px;
   border-radius: 76px 0px 0px 0px;
@@ -103,7 +187,7 @@ img{
 }
 
 .halfMoon::after{
-  background: white;
+  background: black;
   height: 90px;
   width: 45px;
   border-radius: 0px 0px 0px 76px;  
